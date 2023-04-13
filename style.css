@@ -190,7 +190,8 @@ body{
     }
 }
 /* --------Responsive------------ */
-nav .bx{
+nav .bx,
+.header .bx{
     display: none;
 }
 
