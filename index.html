@@ -12,26 +12,25 @@
 <body>
     <header class="header">
         <a href="#" class="logo">Glyden.</a>
-
+        <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar" id="sidemenu">
-            <a href="#"style="--i:1;"class="active">Home</a>
-            <a href="#"style="--i:2;">About</a>
-            <a href="#"style="--i:3;">Skills</a>
-            <a href="#"style="--i:4;">Portfolio</a>
-            <a href="#"style="--i:5;">Contact</a>
-            <i class='bx bx-x' onclick="closemenu()"></i>
+            <a href="#home"style="--i:1;"class="active">Home</a>
+            <a href="#about"style="--i:2;">About</a>
+            <a href="#skills"style="--i:3;">Skills</a>
+            <a href="#portfolio"style="--i:4;">Portfolio</a>
+            <a href="#contact"style="--i:5;">Contact</a>
         </nav>
-        <i class='bx bx-menu' onclick="openmenu()"></i>
+        
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's me</h3>
             <h1>Glyden Damalerio</h1>
-            <h3>And I'm <span class="multilple-text"></span></h3>
+            <h3>And I'm <span class="multiple-text"></span></h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis sequi alias earum adipisci similique obcaecati.</p>
             <div class="social-media">
-                <a href="#" style="--i:7;"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.facebook.com/missleeey" target="_blank" style="--i:7;"><i class='bx bxl-facebook'></i></a>
                 <a href="#" style="--i:8;"><i class='bx bxl-twitter'></i></a>
                 <a href="#" style="--i:9;"><i class='bx bxl-instagram-alt' ></i></a>
                 <a href="#" style="--i:10;"><i class='bx bxl-linkedin' ></i></a>
@@ -43,7 +42,133 @@
             <img src="./assets/main3.png">
         </div>
     </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./assets/main3.png" alt="" srcset="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Virtual Assistant</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia natus sint magnam ex quisquam eveniet repellat vel, minima eligendi harum qui obcaecati aperiam iure laboriosam reiciendis accusantium quidem voluptate laudantium minus, quam dolor fugiat ducimus omnis impedit. Excepturi veritatis consequuntur labore incidunt quisquam sunt aliquid doloremque?</p>
+           <a href="#" class="btn">Read More</a> 
+        </div>
+    </section>
     
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Areas of <span>Expertise</span></h2>
+
+        <div class="skills-container">
+        <div class="skills-box">
+            <i class='bx bx-user-pin'></i>
+            <h3>Executive Assistant</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione maiores quas tenetur. Amet facere veniam laudantium voluptates perspiciatis, dolore delectus?</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="skills-box">
+            <i class='bx bx-store-alt'></i>
+            <h3>Ecommerce VA</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione maiores quas tenetur. Amet facere veniam laudantium voluptates perspiciatis, dolore delectus?</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="skills-box">
+            <i class='bx bx-mobile-alt'></i>
+            <h3>Social Media Manager</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione maiores quas tenetur. Amet facere veniam laudantium voluptates perspiciatis, dolore delectus?</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+     </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Lastest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./assets/3.jpg">
+                <div class="portfolio-layer">
+                    <h4>Project 1</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, fugiat?</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/4.jpg">
+                <div class="portfolio-layer">
+                    <h4>Project 1</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, fugiat?</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/4.jpg">
+                <div class="portfolio-layer">
+                    <h4>Project 4</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, fugiat?</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/3.jpg">
+                <div class="portfolio-layer">
+                    <h4>Project 3</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, fugiat?</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/3.jpg">
+                <div class="portfolio-layer">
+                    <h4>Project 3</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, fugiat?</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/4.jpg">
+                <div class="portfolio-layer">
+                    <h4>Project 1</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, fugiat?</p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT SECTION DESIGN -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address"> 
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject"> 
+            </div>  
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    <!-- FOOTER DESIGN -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by ddLoi25 | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script src="./index.js"></script>
 </body>
