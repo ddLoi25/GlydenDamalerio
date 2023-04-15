@@ -9,6 +9,9 @@
     outline: none;
     scroll-behavior: smooth;
 }
+#shadow-host-companion{
+    display: none;
+}
 :root{
     --bg-color: #1f242d;
     --second-bg-color: #323946;
