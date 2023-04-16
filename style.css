@@ -317,8 +317,20 @@ section{
 .contact form textarea{
     resize: none;
 }
-.contact form .btn{
+.contact form #submit{
     margin-top: 2rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.contact form #submit:hover{
+    box-shadow: none;
 }
 .footer{
     display: flex;

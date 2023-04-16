@@ -7,7 +7,6 @@
     <title>Glyden</title>
     <link rel="stylesheet" href="./style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
     <header class="header">
@@ -30,12 +29,12 @@
             <h3>And I'm <span class="multiple-text"></span></h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis sequi alias earum adipisci similique obcaecati.</p>
             <div class="social-media">
-                <a href="https://www.facebook.com/missleeey" target="_blank" style="--i:7;"><i class='bx bxl-facebook'></i></a>
-                <a href="#" style="--i:8;"><i class='bx bxl-twitter'></i></a>
-                <a href="#" style="--i:9;"><i class='bx bxl-instagram-alt' ></i></a>
-                <a href="#" style="--i:10;"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100070400988803" target="_blank" style="--i:7;"><i class='bx bxl-facebook'></i></a>
+                <a href="#" style="--i:8;" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="#" style="--i:9;" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#" style="--i:10;" target="_blank"><i class='bx bxl-linkedin' ></i></a>
             </div>
-            <a href="./assets/Damalerio, Dennis T.pdf" download class="btn">Download CV</a>
+            <a href="./assets/Damalerio-Glyden.pdf" download class="btn">Download CV</a>
         </div>
 
         <div class="home-img">
@@ -142,21 +141,21 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form action="" class="form-contact">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address"> 
+                <input type="text" placeholder="Full Name" id="fname">
+                <input type="email" placeholder="Email Address" id="email"> 
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject"> 
+                <input type="number" placeholder="Mobile Number" id="mobile">
+                <input type="text" placeholder="Email Subject" id="subject"> 
             </div>  
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" id="submit" onclick="sendMail()">
         </form>
     </section>
     <!-- FOOTER DESIGN -->
-    <footer class="footer">
+    <footer class="footer" id="post">
         <div class="footer-text">
             <p>Copyright &copy; 2023 by ddLoi25 | All Rights Reserved.</p>
         </div>
@@ -165,10 +164,14 @@
         </div>
     </footer>
 
-
-
-
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("iQOB5X6gZc3-_4j8m");
+})();
+</script>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script src="./index.js"></script>
 </body>

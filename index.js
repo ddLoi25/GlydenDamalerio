@@ -38,18 +38,31 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
-var typed = new typed(".mutiple-text", {
-    strings: ["a Virtual Assistant", "an Executive Assistant", "an Ecommerce VA", "a Social Media Manager"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-});
-// ScrollReveal({ 
-//     reset: true,
-//     distance: '80px',
-//     duration: 2000,
-//     delay: 200 
-// });
 
-// ScrollReveal().reveal('.home-content, .heading', { origin:'top'});
+function sendMail(){
+    var params = {
+        name: document.getElementById('fname').value,
+        email: document.getElementById('email').value,
+        mobile: document.getElementById('mobile').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value,
+    };
+
+
+        const serviceID = "service_8op2hkl";
+        const templateID = "template_v8dwu6i";
+
+        emailjs.send(serviceID, templateID, params)
+        .then(
+            res =>{
+                document.getElementById("fname").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("mobile").value = "";
+                document.getElementById("subject").value = "";
+                document.getElementById("message").value = "";
+                console.log(res);
+                alert("Your message sent successfully!");
+            })
+            .catch((err) => console.log(err));
+
+};
