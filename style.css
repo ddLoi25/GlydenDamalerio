@@ -13,10 +13,10 @@
     display: none;
 }
 :root{
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
-    --text-color: #fff;
-    --main-color: #0ef;
+    --bg-color:  #E1F0EC;
+    --second-bg-color: #ffff;
+    --text-color:  #1F2C4C;
+    --main-color: #008080;
 }
 html{
     font-size: 62.5%;
@@ -95,10 +95,7 @@ section{
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
 }
-/* .home-content h3 span,
-.about-content h2 span,
-.skills h2 span,
-.portfolio h2 span,*/span{
+span{
     color: var(--main-color);
 }
 .home-content h1{
