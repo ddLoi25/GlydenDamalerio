@@ -40,15 +40,21 @@ window.onscroll = () => {
 };
 
 function sendMail(){
-    var params = {
-        name: document.getElementById('fname').value,
-        email: document.getElementById('email').value,
-        mobile: document.getElementById('mobile').value,
-        subject: document.getElementById('subject').value,
-        message: document.getElementById('message').value,
-    };
+    // Get the form element
+    var form = document.querySelector('.form-contact');
 
+    // Check if the form is valid
+    if (form.checkValidity()) {
+        // Get the form field values
+        var params = {
+            name: document.getElementById('fname').value,
+            email: document.getElementById('email').value,
+            mobile: document.getElementById('mobile').value,
+            subject: document.getElementById('subject').value,
+            message: document.getElementById('message').value,
+        };
 
+        // Send the email
         const serviceID = "service_8op2hkl";
         const templateID = "template_v8dwu6i";
 
@@ -63,6 +69,9 @@ function sendMail(){
                 console.log(res);
                 alert("Your message sent successfully!");
             })
-            .catch((err) => console.log(err));
-
+        .catch((err) => console.log(err));
+    } else {
+        // Display an error message to the user
+        alert("Please fill out all the required fields.");
+    }
 };
