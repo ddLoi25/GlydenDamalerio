@@ -171,6 +171,11 @@ span{
 .about-img{
     width: 35vw;
 }
+.about-img img{
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;   
+}
 .heading{
     text-align: center;
     font-size: 4.5rem;
