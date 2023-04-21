@@ -425,6 +425,12 @@ span{
     html {
         font-size: 55%;
     }
+    .home-img img{
+        width: 45vw;
+    }
+    .about-img img{
+        width: 40vw;
+    }
 }
 @media (max-width: 991px){
     .header{
@@ -444,6 +450,12 @@ span{
     }
     .footer{
         padding: 2rem;
+    }
+    .home-img img{
+        width: 45vw;
+    }
+    .about-img img{
+        width: 40vw;
     }
 }
 @media (max-width: 768px){
@@ -486,7 +498,8 @@ span{
     .about{
         flex-direction: column-reverse;
     }
-    .about-img{
+    .about-img,
+    .about-img img{
         width: 70vw;
         margin-top: 4rem;
     }
@@ -504,17 +517,18 @@ span{
     .portfolio-container{
         grid-template-columns: 1fr;
     }
-    .about-img{
-        margin-right: 100px;
-    }
-    
 }
 @media (max-width: 450px){
     html{
         font-size: 50%;
     }
-    .about-img{
-        margin-right: 130px;
+    .home-img,
+    .home-img img{
+        width: 90vw;
+    }
+    .about-img,
+    .about-img img{
+        width: 90vw;
     }
     .contact form .input-box input{
         width: 100%;
@@ -524,9 +538,9 @@ span{
     .home-img img{
         width: 90vw;
     }
+    .about-img,
     .about-img img{
         width: 90vw;
-        margin-left: 30px;
     }
     .footer{
         flex-direction: column-reverse;
