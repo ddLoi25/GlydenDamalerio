@@ -58,7 +58,7 @@ contactForm.addEventListener('submit', function(event) {
     };
 
     // Send the email
-    const serviceID = "service_8op2hkl";
+    const serviceID = "service_cehn7si";
     const templateID = "template_v8dwu6i";
 
     emailjs.send(serviceID, templateID, params)
