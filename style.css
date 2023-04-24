@@ -421,6 +421,15 @@ span{
 }
 /* --------Responsive------------ */
 /* BREAKPOINTS */
+@media (max-width:1555px) {
+    .home-img img{
+        width: 45vw;
+    }
+    .about-img img{
+        width: 40vw;
+    }
+}
+
 @media (max-width: 1200px){
     html {
         font-size: 55%;
